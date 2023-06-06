@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
+      },
+      "Repository.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repository.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.Interface.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
+    },
+    "Repository.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Repository.Interface/Repository.Interface.csproj",
+      "msbuildProject": "../Repository.Interface/Repository.Interface.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Repository.Interface >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Modelo\\ahoraSi\\src\\UnitOfWork.Interfaces\\UnitOfWork.Interfaces.csproj",
+      "projectName": "UnitOfWork.Interfaces",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Modelo\\ahoraSi\\src\\UnitOfWork.Interfaces\\UnitOfWork.Interfaces.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Modelo\\ahoraSi\\src\\UnitOfWork.Interfaces\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Usuario\\Desktop\\Modelo\\ahoraSi\\src\\Repository.Interface\\Repository.Interface.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\Modelo\\ahoraSi\\src\\Repository.Interface\\Repository.Interface.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
